@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+ 
+.flex-container{
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    background-color: lightblue;
+    inline-size: 100%;
+}
+.nav1{
+    margin: 0px;
+   height: 100px;
+   width: 100%;
+   border: 5px inset rebeccapurple; 
+   background-color: rgb(14, 2, 82);
+   align-items: center;
+   justify-content: center;
+   text-align: left;
+   background-position: center;
+   font-size: 30px;
+   text-align: middle;
+   padding-bottom: 40px;
+   
+   
+}
+
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    transition: scale 1s;
+    padding: 20px;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+ul li a:hover {
+    background-color: lightblue;
+    color: black;
+    transform: scale(1.1);
+    border-radius: 10px;  
+}
+
+
+.heading{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+}
+img:hover{
+transform: scale(1.1);
+}
