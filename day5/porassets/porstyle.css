@@ -1,0 +1,179 @@
+*{
+margin: 0  ;
+font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+}
+
+.nav{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    background-color: black;
+    }
+
+.leftnav{
+    width: 30%;
+    height: 100%;
+color: aliceblue;
+align-items: left;
+text-align: left;
+font-size: 40px;
+justify-content: center;
+
+}
+ol li{
+    font-size: 40px;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: left;
+    margin: 0px;
+
+}
+ol li:hover{
+background-image: radial-gradient(blue, red);
+background-clip: text;
+color: transparent;
+}
+
+
+.rightnav{
+    width: 70%;
+    color: red;
+    text-align: right;
+    
+}
+
+ ul li{
+    
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+    
+    ul li:hover {
+        border-bottom: 5px solid red;
+        color: blue;
+    }
+ ul li:hover a {
+        color: blue;
+    }
+
+
+ul li a:hover{
+color: blue;
+height: auto;
+}
+.home{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+.mern{
+    background-image: linear-gradient(blue, red);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.hire{
+    margin: 0px;
+    padding: 20px;
+    display: inline-block;
+background-image: linear-gradient(blue, red);   
+ border-radius: 50px;
+ font-size: 30px;
+}   
+.hire:hover{
+        background-image: linear-gradient(red, blue);
+
+}
+.about{
+    display: flex;
+    background-color: rgb(15, 7, 7);
+    color: aliceblue;
+    font-size: 60px;
+    text-align: justify;
+    width: 100%;
+    height: 100vh;
+}
+.long{
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.long :hover{
+    background-image: linear-gradient(blue, red);
+    background-clip: text;
+    color: transparent;
+}
+.about:hover{
+    background-image: linear-gradient(blue, red);
+    background-clip: text;
+    color: transparent;
+
+}
+ h2{
+    padding-top: 40px;
+    background-color: rgb(15, 7, 7);
+    width: 100%;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 50px;
+ }
+.skills{
+    padding-top: 40px;
+    display: grid;
+    background-color: rgb(15, 7, 7);
+    width: 100%;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+h2{
+    font-size: 80px;
+    text-align: center;
+
+}
+h2:hover{
+    background-image: linear-gradient(blue, red);
+    background-clip: text;
+    color: transparent;
+}
+.btn{   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top:60px;
+}
+.btn a{
+         margin: 0px;
+    padding: 20px;
+    display: inline-block;
+background-image: linear-gradient(blue, red);   
+ border-radius: 50px;
+ font-size: 30px;
+}
+.btn a:hover{
+        background-image: linear-gradient(red, blue);
+        transform: scale(1.1);
+}
