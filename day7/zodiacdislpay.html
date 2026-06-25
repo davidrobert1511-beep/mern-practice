@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+            color: black;
+            font-size: 200px;
+        }
+        body{
+    background-color: beige;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign{
+    width: 2000px;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 300px;
+    background-color: beige;
+    color: black;
+
+animation-name: sign;
+            animation-duration: 2s;
+            /* animation-delay: 3s; */
+            animation-iteration-count: infinite;
+        
+}
+ @keyframes sign {
+            0%, 20%{
+                
+                transform: scale();
+            }
+            10% {
+              
+                transform: scale(1.1);
+            }
+            20%, 100%{
+                
+                transform: scale();
+            }
+        }
+
+.sign:hover{
+    transform: scale(1.1);
+     background-color: black;
+    color: beige;
+}
+
+.line1{
+    margin-bottom: 20px;
+}
+
+.line2{
+    font-size: 450px;
+    font-weight: bold;
+    color: darkblue;
+}
+       
+    </style>
+</head>
+<body>
+   <script>
+    let d, m,z,t;
+        d = parseInt(prompt("Enter date"));
+        m = prompt("Enter Month");
+
+
+        if((m==="march||MARCH||March" && d>=21)||(m==="april||APRIL||April" && d<=19)){
+            z="Aries";
+        }
+
+        else if((m==="april||APRIL||April" && d>=20)||(m==="may||MAY||May" && d<=20)){
+            z="Taurus ";
+        }
+
+        else if((m==="may||MAY||May" && d>=21)||(m==="june||JUNE||June" && d<=20)){
+            z="Gemini  ";
+        }
+
+        else if((m==="june||JUNE||June" && d>=21)||(m==="july||JULY||July" && d<=22)){
+            z="Cancer ";
+        }
+
+        else if((m==="july||JULY||July" && d>=23)||(m==="august||AUGUST||August" && d<=22)){
+            z="Leo ";
+        }
+
+        else if((m==="august||AUGUST||August" && d>=23)||(m==="september||SEPTEMBER||September" && d<=22)){
+            z="Virgo ";
+        }
+
+        else if((m==="september||SEPTEMBER||September" && d>=23)||(m==="october||OCTOBER||October" && d<=22)){
+            z="Libra ";
+        }
+
+        else if((m==="october||OCTOBER||October" && d>=23)||(m==="november||NOVEMBER||November" && d<=21)){
+            z="scorpio ";
+        }
+
+        else if((m==="november||NOVEMBER||November" && d>=22)||(m==="december||DECEMBER||December" && d<=21)){
+            z="Sagittarius  ";
+        }
+
+        else if((m==="december||DECEMBER||December" && d>=22)||(m==="january||JANUARY||January" && d<=20)){
+            z="Capricorn ";
+        }
+        else if((m==="january||JANUARY||January" && d>=21)||(m==="february||FEBRUARY||February" && d<=18)){
+            z="Aquarius ";
+        }
+        else if((m==="february||FEBRUARY||February" && d>=19)||(m==="march||MARCH||March" && d<=20)){
+            z="Pisces ";
+        }
+
+        else{
+            z="wrong";
+        }
+        document.write(`
+<div class="sign">
+    <div class="line1">${d} ${m}</div>
+    <div class="line2">${z}</div>
+</div>
+`);
+   </script>
+</body>
+</html>
