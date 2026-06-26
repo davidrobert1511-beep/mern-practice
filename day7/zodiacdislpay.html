@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+            color: black;
+            font-size: 40px;
+        }
+        body{
+    background-color: beige;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: beige;
+    color: black;
+
+animation-name: sign;
+            animation-duration: 2s;
+            /* animation-delay: 3s; */
+            animation-iteration-count: infinite;
+        
+}
+ @keyframes sign {
+            0%, 20%{
+                
+                transform: scale();
+            }
+            10% {
+              
+                transform: scale(1.1);
+            }
+            20%, 100%{
+                
+                transform: scale();
+            }
+        }
+
+.sign:hover{
+    transform: scale(1.1);
+     background-color: black;
+    color: beige;
+}
+
+.line1{
+    margin-bottom: 10px;
+}
+
+.line2{
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+}
+       
+    </style>
+</head>
+<body>
+   <script>
+    let d, m,z;
+        d = parseInt(prompt("Enter date"));
+        m = parseInt( prompt ("Enter Month"));
+        z="";
+
+
+        if((m == 3 && d>=21)||(m == 4 && d<=19)){
+            z="Aries";
+        }
+
+        else if((m==4 && d>=20)||(m==5 && d<=20)){
+            z="Taurus ";
+        }
+
+        else if((m == 5 && d>=21)||(m == 6 && d<=20)){
+            z="Gemini";
+        }
+
+        else if((m==6 && d>=21)||(m==7&& d<=22)){
+            z="Cancer ";
+        }
+
+        else if((m==7&& d>=23)||(m==8 && d<=22)){
+            z="Leo ";
+        }
+
+        else if((m==8 && d>=23)||(m==9 && d<=22)){
+            z="Virgo ";
+        }
+
+        else if((m==9 && d>=23)||(m==10 && d<=22)){
+            z="Libra ";
+        }
+
+        else if((m==10 && d>=23)||(m==11 && d<=21)){
+            z="scorpio ";
+        }
+
+        else if((m==11 && d>=22)||(m==12 && d<=21)){
+            z="Sagittarius  ";
+        }
+
+        else if((m==12 && d>=22)||(m==1&& d<=20)){
+            z="Capricorn ";
+        }
+        else if((m==1&& d>=21)||(m==2 && d<=18)){
+            z="Aquarius ";
+        }
+        else if((m==2 && d>=19)||(m==3 && d<=20)){
+            z="Pisces ";
+        }
+
+        else{
+            z="wrong";
+        }
+        document.write(`
+<div class="sign">
+    <div class="line1">${d} ${m}</div>
+    <div class="line2">${z}</div>
+</div>
+`);
+   </script>
+</body>
+</html>
